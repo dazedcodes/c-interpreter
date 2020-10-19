@@ -1,0 +1,6 @@
+(cdr (quote (1 2)))
+(car (cons 1 (cons 1 2)))
+(define doublenull (cons (quote ()) (quote ())))
+(null? doublenull)
+(cons 2 (quote (5)))
+(cdr (cons 2 (quote (5))))

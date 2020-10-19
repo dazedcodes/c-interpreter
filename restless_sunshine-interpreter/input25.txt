@@ -1,0 +1,2 @@
+"should error for lack of define args"
+(define fun1)

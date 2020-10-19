@@ -1,0 +1,8 @@
+(define my-cons (cons 5 (quote ())))
+(define cons-two (cons (cons 4 3) (cons 3 2)))
+my-cons
+cons-two
+(car (car cons-two))
+(cdr (cdr cons-two))
+(cdr my-cons)
+(cdr (cdr (cdr cons-two)))

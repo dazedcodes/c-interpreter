@@ -1,0 +1,7 @@
+
+(define fun1 (lambda() 7))
+
+(define fun2 (lambda (x) (x)))
+(fun2 fun1)
+;(let ((y 3) (fun (lambda(x)
+ ;                 (x)))) (fun fun1) ) 

@@ -1,0 +1,5 @@
+(define foo
+      (lambda (x)
+         (+ 4 x)))
+
+(foo 6)

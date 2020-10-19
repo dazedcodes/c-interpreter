@@ -1,0 +1,5 @@
+"should print 3 \n 4 \n 3"
+3
+4
+(if #t 3 4)
+

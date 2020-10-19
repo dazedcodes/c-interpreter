@@ -1,0 +1,8 @@
+"should print f \n 5 \n #t \n 2 \n and some other stuff"
+(let ((x 4) (y (quote hey)) (z 5)) (quote f))
+(let ((x 4) (y 2) (z 5)) 2 3 z)
+(let ((trooo #t) (NOPE #f) (one 1) (shpdbfalse #f)) (if trooo (if NOPE #f #t) trooo))
+(let ((x 1) (y 2)) (let ((x y)) x))
+(let ((y (let ((x 6)) x))) y)
+(if #f (quote a) (quote 3))
+(let (((quote a) 3)) a)

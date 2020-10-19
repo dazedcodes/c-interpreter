@@ -1,0 +1,1 @@
+(letrec ((x 3) (x 4) (foo (lambda(x) (if #t 1 (foo #t))))) (foo #f))

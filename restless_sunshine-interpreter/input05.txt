@@ -1,0 +1,4 @@
+"should print 'true' , then print out let statement (testing quote)"
+
+(if (let ((x #t)) x) "true" "false")
+(quote (let ((x 4)))) 

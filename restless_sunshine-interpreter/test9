@@ -1,0 +1,6 @@
+"should print (() . 5), (()), (), (3.2), (3)"
+(cons (quote ()) 5)
+(cons (quote ()) (quote ()))
+(quote ())
+(cons 3 2)
+(cons 3 (quote ()))

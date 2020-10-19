@@ -1,0 +1,10 @@
+(letrec((is-even (lambda(x)
+                   (if (= (modulo x 2) 0) "even" (is-odd x)))) (is-odd (lambda(x)
+                                                                                            (if (= (modulo x 2) 1) "odd" (is-even x))))) (is-even 5))
+"should print good shit"
+(letrec () "good shit")
+"should print 11"
+(letrec((x 6) (foo (lambda(y)
+                     (+ x y)))) (foo 5))
+"should throw error undefined"
+(letrec((x 6) (y x)) x)

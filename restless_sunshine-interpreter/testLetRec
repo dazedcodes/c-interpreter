@@ -1,0 +1,12 @@
+"should print 5"
+(letrec ((x 5) (y (lambda (b) (if b 2 (x #f))))) x)
+"should print 3"
+(letrec ((x 1) (y 2) (foo (lambda (x) (if x 3 (foo #t))))) (foo #f))
+"should print 6"
+(letrec () 6)
+"should print error"
+(letrec ((x 3) (dad 8)))
+"should print error"
+(define y 5)
+(letrec ((x y) (y x))
+    x)

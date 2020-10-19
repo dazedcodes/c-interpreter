@@ -1,0 +1,4 @@
+"should give error message y undefined"
+(let ((x 3)) 2 4 x)
+(let ((x 5)) x)
+(if #t x y)

@@ -1,0 +1,6 @@
+"This one should be okay (testing lambda(x)(x))"
+(define fun1 (lambda(x)
+               (x)))
+
+(define fun2 (lambda() 68))
+(fun1 fun2)

@@ -1,0 +1,7 @@
+(define length-list
+     (lambda (lst)
+       (if (null? lst)
+           0
+           (+ 1 (length-list (cdr lst))))))
+
+(length-list (quote (1 2 3 4)))

@@ -1,0 +1,7 @@
+"print 5 \n then error can't define non symbol"
+(define haha
+  (lambda (x y)
+      y))
+
+(haha  2 5)
+(define 4 5) 

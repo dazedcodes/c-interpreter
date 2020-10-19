@@ -1,0 +1,12 @@
+"Basic tests for all our primitives: 5, (3.2), (4 5 .6), 3, 2, #f, #f, 0, #t, (1 2 3 4 5 6)"
+(+ 2 3)
+(cons 3 2)
+(cons 4 (quote (5 6)))
+(car (cons 3 2))
+(cdr (cons 3 2))
+(null? 6)
+(null? (quote(6)))
+(+)
+(null? (quote ()))
+(cons 1  (quote (2 3 4 5 6)))
+(quote (1 2 3 4 5))

@@ -1,0 +1,19 @@
+"should print (1 2 3 4) \n 7 \n and then an error for needing lambda to be in parens"
+(define symbol 1)
+(define a 7)
+(define a 8)
+(define Dave (quote(1 2 3 5)))
+(define function
+  (lambda (x y z)
+    z x y))
+(function 1 2 3)
+(lambda (x) x)
+Dave 
+a
+
+(define dog 
+  (lambda x
+        x))
+(dog 2)
+(lambda)
+;(lambda (x) 2 3 x)

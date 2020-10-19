@@ -1,0 +1,24 @@
+(define sum
+  (lambda (list)
+    (if (null? list)
+        0
+          (+ (car list) (sum(cdr list))))))
+
+          (define list-length
+            (lambda (list)
+                (if (null? list)
+                        0
+                            (+ 1 (list-length(cdr list))))))
+
+
+                            (define keep-first-n
+                              (lambda (n list)
+                                ( cond ( (= 0 n) (quote()))
+                                         ((> n (list-length list)) "Please choose a new n! Your n is > than length of the list.")
+                                                  ((< n 0) "Please choose a new n! Your n is less than 0.")
+                                                           (else (cons (car list) (keep-first-n (- n 1) (cdr list)))))))
+
+                                                           (sum (quote(20 1 2 6 1)))         
+                                                           (keep-first-n 4 (quote(d a v e i s t h e b e s t)))
+                                                           (keep-first-n -2 (quote(d a v e i s t h e b e s t)))
+                                                           (keep-first-n 16 (quote(d a v e i s t h e b e s t)))

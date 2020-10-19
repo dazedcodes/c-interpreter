@@ -1,0 +1,14 @@
+"print 8 8 (I think?? 8 6 might be right but I think that's dynamic scoping"
+(define x 8)
+
+(define fun1
+  (lambda ()
+    (let ((x 6))
+      (fun2))))
+
+(define fun2
+  (lambda ()
+    x))
+
+(fun2)
+(fun1)

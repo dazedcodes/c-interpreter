@@ -1,0 +1,6 @@
+"Testing let frames"
+(define foo (lambda (x) (if x "true" "false")))
+(let ((x #t)) foo x)
+(let ((foo +) (x 3) (y 4)) (foo x y)) 
+ 
+

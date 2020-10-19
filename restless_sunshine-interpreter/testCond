@@ -1,0 +1,3 @@
+(define x #t)
+(define y #f)
+(cond (y "things are bad") (x "this is what's supposed to print"))

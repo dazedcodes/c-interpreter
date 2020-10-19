@@ -1,0 +1,3 @@
+(car (cdr (cdr (quote(apple orange pear grapefruit)))))
+(car (cdr (cdr (quote((apple) (orange) (pear) (grapefruit))))))
+(car (cdr (cdr (quote(apple (orange) ((pear)) (((grapefruit))))))))

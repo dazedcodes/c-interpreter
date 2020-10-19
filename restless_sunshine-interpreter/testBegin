@@ -1,0 +1,9 @@
+(define cat 4)
+(begin 1 (set! cat 5) 3)
+"should have just printed 3"
+(begin 5 4 3 (set! cat "woof"))
+"this line should appear right after the just printed 3 line"
+"and now we should print (7):"
+(begin (cons 2 3) 5 4 (cons 7 (quote ())))
+"should print (7)"
+(letrec ((x 1) (y 2))(begin (cons 2 3) 5 4 (cons 7 (quote ()))))

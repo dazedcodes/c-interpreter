@@ -1,0 +1,2 @@
+(define set (lambda (L) (let ((x 2) (y (quote 3))) (set! y (cons L y)) (if (null? L) y (set (cdr L))))))
+(set (quote (1 2 3 4)))

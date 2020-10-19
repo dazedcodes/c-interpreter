@@ -1,0 +1,3 @@
+"should print second bit  true"
+(define testcons (cons #f #t))
+(cond ((car testcons) "first bit true") ((cdr testcons) "second bit true"))
